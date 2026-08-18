@@ -1,0 +1,6 @@
+{
+  "name": "anand-nagar-backend",
+  "scripts": {
+    "dev": "docker-compose up"
+  }
+}
