@@ -13,7 +13,7 @@ from app.settings.config import settings
 Base.metadata.create_all(bind = engine)
 
 app = FastAPI(
-    title="Anand Nagar Website API",
+    title="Anand Nagar Website Backend API",
     version="1.0.0",
     description="Backend APIs for Anand Nagar Website"
 )
@@ -23,7 +23,7 @@ FRONTEND_URL = settings.FRONTEND_URL.rstrip("/")
 origins = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
-    FRONTEND_URL
+     FRONTEND_URL
 ]
 
 app.add_middleware(
